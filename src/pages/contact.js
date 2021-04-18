@@ -1,4 +1,4 @@
-import { Container, List, ListItem, ListItemIcon, ListItemText } from '@material-ui/core'
+import { Container, Link, ListItem, ListItemIcon, ListItemText } from '@material-ui/core'
 import { Home, ImportContacts, Send, Instagram, Email, Facebook } from '@material-ui/icons'
 import React from 'react'
 import { useHistory } from 'react-router';
@@ -11,15 +11,15 @@ export default function Notes() {
   const menuItems = [
     {text:"Email",
     icon:<Home />,
-    path:<ListItem><ListItemIcon><Email /></ListItemIcon><ListItemText primary="Michael@Corner-Exit.com" /></ListItem>,
+    path:<Link href='mailto:Michael@Corner-Exit.com' target="_blank"><ListItemText primary="Michael@Corner-Exit.com" /></Link>,
     },
     {text:"Instagram",
     icon:<ImportContacts />,
-    path:<ListItem><ListItemIcon><Instagram /></ListItemIcon><ListItemText primary="@Corner-Exit" /></ListItem>,
+    path:<Link href='https://www.instagram.com/corner_exit/' target="_blank"><ListItemText primary="@Corner_Exit" /></Link>,
     },
     {text:"Facebook",
     icon:<Send />,
-    path:<ListItem><ListItemIcon><Facebook /></ListItemIcon><ListItemText primary="Corner Exit Event Services" /></ListItem>,
+    path:<Link href='www.facebook.com/CornerExitEventServices target="_blank"'><ListItemText primary="Corner Exit Event Services" /></Link>,
 },
 ]
 
