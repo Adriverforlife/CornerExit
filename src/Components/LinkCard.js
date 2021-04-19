@@ -22,6 +22,10 @@ const useStyles = makeStyles({
     justifyContent: "center",
     maxWidth: "sm"
   },
+  wrapIcon: {
+    verticalAlign: 'middle',
+    display: 'inline-flex'
+   }
 
 });
 
@@ -35,12 +39,11 @@ export default function TextCard(props) {
           <Container className={classes.bannerImage}>
           <img width="50%" src={props.pic} />
           </Container>
-        <Typography variant="h5" component="h2">
-            {props.title}
-            <br/>
+        <Typography className={classes.wrapIcon} variant="h6" component="h4">
+            {props.icon} {props.title}
         </Typography>
         <Typography variant="body2" component="p">
-        {props.body}<br/>
+        {props.body}
 
         </Typography>
       </CardContent>
