@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Contact from './pages/contact'
 import Create from './pages/Create'
+import Autocross from './pages/tarmacChallengeAutocross'
 import {createMuiTheme, ThemeProvider } from '@material-ui/core'
 import { grey, red } from '@material-ui/core/colors'
 import Banner from './Components/Banner'
@@ -20,7 +21,7 @@ function App() {
       <Router>
           <Route exact path="/" component={Create} />
           <Route exact path="/contact" component={Contact} />
-          <Route exact path="/eventResults"component={Create} />
+          <Route exact path="/autocross"component={Autocross} />
       </Router>
     </ThemeProvider>
   );
