@@ -8,7 +8,7 @@ import { Container } from '@material-ui/core';
 const useStyles = makeStyles({
   root: {
     minWidth: 275,
-    margin:50
+    margin: 50
   },
   title: {
     fontSize: 14,
@@ -32,15 +32,15 @@ export default function TextCard(props) {
   return (
     <Card className={classes.root}>
       <CardContent>
-          <Container className={classes.bannerImage}>
+        <Container className={classes.bannerImage}>
           <img width="50%" src={props.pic} />
-          </Container>
+        </Container>
         <Typography variant="h5" component="h2">
-            {props.title}
-            <br/>
+          {props.title}
+          <br />
         </Typography>
         <Typography variant="body2" component="p">
-        {props.body}<br/>
+          {props.body}<br />
 
         </Typography>
       </CardContent>

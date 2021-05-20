@@ -5,6 +5,7 @@ import Autocross from './pages/tarmacChallengeAutocross'
 import {createMuiTheme, ThemeProvider } from '@material-ui/core'
 import { grey, red } from '@material-ui/core/colors'
 import Banner from './Components/Banner'
+
 const theme = createMuiTheme({
   type: "dark",
   palette: {
@@ -12,7 +13,6 @@ const theme = createMuiTheme({
     secondary: red
   }
 })
-
 
 function App() {
   return (

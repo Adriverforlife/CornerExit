@@ -10,21 +10,24 @@ import { useHistory } from 'react-router';
 import Link from '@material-ui/core/Link'
 
 export default function SimpleMenu() {
-    const history = useHistory();
-    const menuItems = [
-        {text:"Home",
-        icon:<Home />,
-        path:"/",
-        },
-        {text:"Autocross Challenge",
-        icon:<ImportContacts />,
-        path:"/autocross",
-        },
-        {text:"Contact Us",
-        icon:<Send />,
-        path:"/contact",
+  const history = useHistory();
+  const menuItems = [
+    {
+      text: "Home",
+      icon: <Home />,
+      path: "/",
     },
-]
+    {
+      text: "Autocross Challenge",
+      icon: <ImportContacts />,
+      path: "/autocross",
+    },
+    {
+      text: "Contact Us",
+      icon: <Send />,
+      path: "/contact",
+    },
+  ]
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
@@ -47,16 +50,16 @@ export default function SimpleMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-          <List>
-              {menuItems.map(item => (
-                  <MenuItem
-                    key={item.text} onClick={handleClose}>
-                        <Link href = {item.path}>
-                            <ListItemIcon>{item.icon}</ListItemIcon>
-                        {item.text} </Link>
-                    </MenuItem>
-              ))}
-          </List>
+        <List>
+          {menuItems.map(item => (
+            <MenuItem
+              key={item.text} onClick={handleClose}>
+              <Link href={item.path}>
+                <ListItemIcon>{item.icon}</ListItemIcon>
+                {item.text} </Link>
+            </MenuItem>
+          ))}
+        </List>
         {/* <MenuItem onClick={handleClose}><ListItemIcon><Home /></ListItemIcon>Home</MenuItem>
         <MenuItem onClick={handleClose}><ListItemIcon><ImportContacts /></ListItemIcon>Event Results</MenuItem>
         <MenuItem onClick={handleClose}><ListItemIcon><Send /></ListItemIcon> Contact Us </MenuItem> */}
