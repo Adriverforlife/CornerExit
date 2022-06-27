@@ -3,20 +3,22 @@ import Contact from './pages/contact'
 import Create from './pages/Create'
 import Autocross from './pages/tarmacChallengeAutocross'
 import {createMuiTheme, ThemeProvider } from '@material-ui/core'
-import { grey, red } from '@material-ui/core/colors'
+import { colors } from '@material-ui/core'
 import Banner from './Components/Banner'
 
+
 const theme = createMuiTheme({
-  type: "dark",
   palette: {
-    primary: grey,
-    secondary: red
+    primary: {main: '#212121'},
+    background:{default: colors.lightBlue},
+    secondary: colors.red
   }
 })
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
+
       <Banner />
       <Router>
           <Route exact path="/" component={Create} />

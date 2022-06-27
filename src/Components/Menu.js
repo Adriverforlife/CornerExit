@@ -7,7 +7,8 @@ import { Home, ImportContacts, Send } from '@material-ui/icons'
 import List from '@material-ui/core/List'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import { useHistory } from 'react-router';
-import Link from '@material-ui/core/Link'
+import Link from '@material-ui/core/Link';
+import {colors} from '@material-ui/core/';
 
 export default function SimpleMenu() {
   const history = useHistory();
@@ -40,7 +41,7 @@ export default function SimpleMenu() {
 
   return (
     <div>
-      <IconButton aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
+      <IconButton style={{color:'white'}} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}>
         <MenuIcon />
       </IconButton>
       <Menu

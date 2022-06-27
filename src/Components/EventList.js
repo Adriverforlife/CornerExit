@@ -49,7 +49,7 @@ export default function EventList(props) {
           {events.map((event) => (
             <TableRow key={event.name}>
               <TableCell component="th" scope="event">
-                <Link href={event.detailuri}> {event.name}</Link>
+                <Link  href={event.detailuri}> {event.name}</Link>
               </TableCell>
               <TableCell align="right"><Moment format="MM/DD/YYYY">{event.start}</Moment></TableCell>
               <TableCell align="right">{event.venue.name}</TableCell>

@@ -37,12 +37,12 @@ export default function EventList(props) {
     <TableContainer component={Paper}>
       <Typography variant="h5" component="h2">
         Upcoming Events</Typography>
-        <Typography variant="body2" component="p">We host a small autocross series of our own. Our upcoming events are listed below. Go to the <Link href='/autocross'>Autocross Challenge</Link> Page for more details!</Typography>
+        <Typography variant="body2" component="p">We host an Autocross Series of our own. Our upcoming events are listed below. Go to the <Link href='/autocross'>Autocross Challenge</Link> Page for more details!</Typography>
       <Table className={classes.table} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell>Date</TableCell>
-            <TableCell align="right">Event</TableCell>
+            <TableCell>Event</TableCell>
+            <TableCell align="right">Date</TableCell>
             <TableCell align="right">Venue</TableCell>
           </TableRow>
         </TableHead>
