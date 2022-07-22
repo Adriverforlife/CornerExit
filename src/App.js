@@ -24,6 +24,7 @@ function App() {
           <Route exact path="/" component={Create} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/autocross"component={Autocross} />
+          <Route exact path="/results"link={<results />} />
       </Router>
     </ThemeProvider>
   );
