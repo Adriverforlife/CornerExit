@@ -5,6 +5,8 @@ import Autocross from './pages/tarmacChallengeAutocross'
 import {createMuiTheme, ThemeProvider } from '@material-ui/core'
 import { colors } from '@material-ui/core'
 import Banner from './Components/Banner'
+import React from 'react'
+import data from "./data.json"
 
 
 const theme = createMuiTheme({
@@ -15,7 +17,16 @@ const theme = createMuiTheme({
   }
 })
 
-function App() {
+class App extends React.Component {
+ constructor() {
+   super();
+   this.state = {
+    products: data.products,
+    size:"",
+    sort:"",
+ }
+}
+  render() {
   return (
     <ThemeProvider theme={theme}>
 
@@ -28,5 +39,5 @@ function App() {
     </ThemeProvider>
   );
 }
-
+}
 export default App;

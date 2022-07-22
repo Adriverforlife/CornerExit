@@ -1,0 +1,31 @@
+{
+    "products": [
+      {
+        "_id": "Open Faced",
+        "image": "/pictures/helmets/Openface.jpg",
+        "title": "Pyrotect SA2020 Open Faced Helmet",
+        "description": "Pyrotect ProSport Helmets are SA2020 rated. For use in competitive automotive sports, marine, and kart racing.",
+        "availableSizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+        "availableColors": ["White", "Black", "Flat Black", "Orange"],
+        "price": 199
+      },
+      {
+        "_id": "Full Face Ultra-sport",
+        "image": "/pictures/helmets/Ultrasport.jpg",
+        "title": "Pyrotect SA2020 Full Faced Ultra Sport Helmet",
+        "description": "Pyrotect Ultra-Sport Helmets SA2020 Rated. For use with Automotive, Motorcycles and other motorized vehicles.",
+        "availableSizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+        "availableColors": ["White", "Black", "Flat Black", "Flat Grey"],
+        "price": 289
+      }, 
+      {
+        "_id": "Full Face Pro-sport",
+        "image": "/pictures/helmets/Prosport.jpg",
+        "title": "Pyrotect SA2020 Full Faced Pro-Sport Helmet",
+        "description": "Pyrotect Pro-Sport Helmets SA2020 Rated. For use with Automotive, Motorcycles and other motorized vehicles.",
+        "availableSizes": ["S", "M", "L", "XL", "XXL", "XXXL"],
+        "availableColors": ["White", "Black", "Flat Black", "Silver"],
+        "price": 339
+      }
+    ]
+  }
