@@ -6,7 +6,6 @@ import Autocross from './pages/tarmacChallengeAutocross'
 import {createMuiTheme, ThemeProvider } from '@material-ui/core'
 import { colors } from '@material-ui/core'
 import Banner from './Components/Banner'
-import ResultList from './pages/resultList'
 
 
 const theme = createMuiTheme({
