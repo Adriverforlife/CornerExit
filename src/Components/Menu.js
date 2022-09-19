@@ -3,7 +3,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import { Home, ImportContacts, Send } from '@material-ui/icons'
+import { Home, ImportContacts, Send, Ballot } from '@material-ui/icons'
 import List from '@material-ui/core/List'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import { useHistory } from 'react-router';
@@ -22,6 +22,11 @@ export default function SimpleMenu() {
       text: "Autocross Challenge",
       icon: <ImportContacts />,
       path: "/autocross",
+    },
+    {
+      text: "California SubieFest Results",
+      icon:<Ballot/>,
+      path: '/results',
     },
     {
       text: "Contact Us",
