@@ -5,6 +5,7 @@ import {
 	ButtonGroup,
 	Container,
 	makeStyles,
+	Grid,
 } from "@material-ui/core";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
@@ -67,18 +68,28 @@ export default function Rules(props) {
 		),
 	];
 	return (
-		<TableContainer component={Paper}>
+		<Grid container spacing={2} component={Paper}>
+			<Grid item xs={10}>
 			<Typography variant="h5" component="h2">
 				Car Classification/Rules
 			</Typography>
+
 			<Typography variant="body2" component="p">
 				We have 4 basic classes that are broken down in the images below. We are
 				open to creating more specialty classes for car clubs/groups if there is
 				enough interest. Just go to our contact page to message us if you are
 				intested in this!
 			</Typography>
-			<TextCard pic={Street} /> <TextCard pic={SuperStreet} />{" "}
-			<TextCard pic={Prep} /> <TextCard pic={Mod} />
-		</TableContainer>
+			</Grid>
+			<Grid item xs={12} md={6}>
+			<Container><img width="100%" src={Street} /></Container> 
+			</Grid>			<Grid item xs={12} md={6}>
+			<Container><img width="100%" src={SuperStreet} /></Container> 
+			</Grid>			<Grid item xs={12} md={6}>
+			<Container><img width="100%" src={Prep} /></Container> 
+			</Grid>			<Grid item xs={12} md={6}>
+			<Container><img width="100%" src={Mod} /></Container> 
+			</Grid>
+		</Grid>
 	);
 }

@@ -1,34 +1,11 @@
 import React, {useEffect, } from 'react'
-import { Typography, Button, ButtonGroup, Container, makeStyles } from '@material-ui/core'
-import { Home, ImportContacts, Send } from '@material-ui/icons'
-import TextCard from '../Components/TextCard'
-import TitlePic from '../pictures/996gt3.jpeg'
-import Subiefest from '../pictures/subiefest.jpg'
-import EventFrontPage from '../Components/EventFrontPage'
+import { makeStyles } from '@material-ui/core'
 import Subiefest2022 from '../results/subiefest202.htm'
-import App from '../App'
 import { useState } from 'react'
+
 const useStyles = makeStyles({
 
 })
-var html = require('../results/subiefest202.htm')
-var template = {__html:html}
-
-
-// export default function Results(){
-//     let[htmlFileString, setHtmlFileString] = useState();
-//     async function fetchHtml() {setHtmlFileString(await( await fetch(Subiefest2022)).text());
-//     }
-//     useEffect(()=> {
-//         fetchHtml();
-//     },[]);
-//     return(
-//         <div>
-//             <div dangerouslySetInnerHTML={{__html: htmlFileString }}></div>
-//         </div>
-//     );
-// }
-
 
 export default function Results() {
     const classes = useStyles()

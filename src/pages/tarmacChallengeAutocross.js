@@ -1,15 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Typography, Button, ButtonGroup, Container, makeStyles } from '@material-ui/core';
 import TextCard from '../Components/TextCard'
-import TitlePic from '../pictures/997gt3.jpg'
-import Table from '@material-ui/core/Table';
-import TableBody from '@material-ui/core/TableBody';
-import TableCell from '@material-ui/core/TableCell';
-import TableContainer from '@material-ui/core/TableContainer';
-import TableHead from '@material-ui/core/TableHead';
-import TableRow from '@material-ui/core/TableRow';
-import Paper from '@material-ui/core/Paper';
+import TitlePic from '../pictures/sponsors/Main.png'
+
 import Rules from '../Components/Rules';
+import Sponsorgrid from '../Components/Sponsorgrid'
 import EventList from '../Components/EventList';
 import axios from 'axios';
 
@@ -47,12 +42,13 @@ export default function Create(props) {
   }
   return (
     <Container>
-      <TextCard
-        title='Autocross Challenge Series'
+      
+     <TextCard
         pic={TitlePic}
         body='Our Challenge Series is Autocross with a twist! We normally have a couple practice runs in the morning, then the 4 scored runs. However, instead of your single fastest run, we add ALL 4 RUNS together to get your overall time. This rewards the consistent driver over the "banzai" driver that hits lots of cones! We also run a looser class set up as seen below to encourage drivers to bring out their "fun" cars! After we have finished our competition we continue with fun runs for anyone that wants to continue playing. Overall its a very laid back event that is fun for everyone from 1st timers to "professional" autocrossers!'
       />
       <EventList />
+      <Sponsorgrid />
       <Rules />
     </Container>
   )
