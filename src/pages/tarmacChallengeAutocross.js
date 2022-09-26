@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Typography, Button, ButtonGroup, Container, makeStyles } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 import TextCard from '../Components/TextCard'
 import TitlePic from '../pictures/sponsors/Main.png'
 
@@ -8,30 +8,13 @@ import Sponsorgrid from '../Components/Sponsorgrid'
 import EventList from '../Components/EventList';
 import axios from 'axios';
 
-const useStyles = makeStyles({})
 
 export default function Create(props) {
-  const classes = useStyles()
-
-  function createData(name, Street, Prep, Race,) {
-    return { name, Street, Prep, Race, };
-  }
-  const rows = [
-    createData('Car', "(Factory Rated Horsepower x 5) < Factory Listed Weight", "Any", "Any"),
-    createData('Wheels', "+/-1inch Diameter and Width", "Any", "Any"),
-    createData('Tires', "200+ Treadwear", "200+ Treadwear", "Any"),
-    createData('Brakes', "Any pads and lines, and ABS can be disabled", "Any", "Any"),
-    createData('Suspension', "Any Swaybars and Shocks", "Any springs/shocks/swaybars(no mount relocations)", "Any"),
-    createData('Engine/Turbo', "Stock", "Electronic Controls allowed. No Hardware changes between throttle and turbo", "Any"),
-    createData('Intake/Exhaust', "Filter, Cat Back Exhaust", "Any", "Any"),
-    createData('Body/Weight', "Stock except for comfort/convience(radios, shift knobs)", "Any hood/trunk, seats, shifter, steering wheel. Ground effects and 'showy'", "Any"),
-    createData('Spirit of the Rules', "If a car is classed unfairly, we reserve the right to adjust its reclass according to how we feel it best fits in the spirit of our rules",),
-  ];
-  const [events, getEvents] = useState([]);
+  const [getEvents] = useState([]);
 
   useEffect(() => {
     getAllEvents();
-  }, []);
+  });
 
   function getAllEvents() {
     axios.get(`https://api.motorsportreg.com/rest/calendars/organization/F19F66B9-D516-5FEE-B4ABB9A12E335B59.json`)

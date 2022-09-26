@@ -1,26 +1,15 @@
-import React, {useEffect, useState, } from 'react'
-import { makeStyles, Grid, Item, Link, Typography, Paper } from '@material-ui/core'
-import Subiefest2022 from '../results/subiefest202.htm'
+import React, {useEffect } from 'react'
+import { Grid, Link, Typography, Paper } from '@material-ui/core'
 import TextCard from './LinkCard'
 import Alpine from "../pictures/sponsors/Alpine.png";
 import FMC from "../pictures/sponsors/FMC.png";
 import Motomates from "../pictures/sponsors/Motomates.png";
 import Swift from "../pictures/sponsors/Swift.png";
-import Main from "../pictures/sponsors/Main.png";
 import TPM from "../pictures/sponsors/TPM.png";
 import OS from "../pictures/sponsors/OS.png";
-import Prep from "../pictures/Prep.jpg";
-import Mod from "../pictures/Mod.jpg";
 
-const useStyles = makeStyles({
-
-})
 
 export default function Sponsorgrid() {
-    const classes = useStyles()
-    let[htmlFileString, setHtmlFileString] = useState();
-    async function fetchHtml() {setHtmlFileString(await( await fetch(Subiefest2022)).text());
-    }
     useEffect(()=> {
   
     },[]);
