@@ -21,10 +21,10 @@ export default function Sponsorgrid() {
 
         </Grid>
         <Typography variant="h5" component="h2">
-           Sponsors
+           Sponsors and Partners
         </Typography>
         <Typography variant="body1" component="p">
-         Our title Sponsor <Link href="https://osgikenusa.com/">OS Giken </Link>along with the following Series Sponsors allow us to hold our series! We want to thank all of them for making our series possible!
+         Our title Sponsor <Link href="https://osgikenusa.com/">OS Giken </Link>along with the following Series Sponsors and Partners allow us to hold our series! We want to thank all of them for making our series possible!
         </Typography>
         <Grid item xs={12}>
           <Link href="https://osgikenusa.com/">
@@ -33,7 +33,7 @@ export default function Sponsorgrid() {
         </Grid>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Link href="https://www.alpinestars.com/">
+          <Link href="https://www.alpinestars.com/auto">
         <TextCard pic={Alpine} />
         </Link>
         </Grid>			<Grid item xs={12} md={6}>
